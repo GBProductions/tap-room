@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function Kombucha(props){
     return (
@@ -8,5 +9,12 @@ function Kombucha(props){
         </React.Fragment>
     );
 }
+
+Kombucha.propTypes = {
+    name: PropTypes.string.isRequired,
+    brand: PropTypes.string.isRequired,
+    price: PropTypes.string.isRequired,
+    flavor: PropTypes.string.isRequired
+};
 
 export default Kombucha;

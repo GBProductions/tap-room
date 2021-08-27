@@ -22,7 +22,7 @@ Drinks on me!
 
 </details>
 
-<img src="public/tap-room.png">
+<img src="src/img/tap-room.png">
 
 
 ## Setup/Installation Requirements
