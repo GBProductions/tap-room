@@ -3,7 +3,18 @@ import Kombucha from "./Kombucha";
 
 function KombuchaList(){
     return (
-        <Kombucha />
+        <React.Fragment>
+            <Kombucha
+                name="Rad Dreamz"
+                brand="2 Town Kombucha"
+                price="$5"
+                flavor="Coca-Cola" />
+            <Kombucha
+                name="Lion Hearts"
+                brand="2 Town Kombucha"
+                price="$5"
+                flavor="Rasberry" />
+        </React.Fragment>
     );
 }
 
