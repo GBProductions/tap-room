@@ -1,11 +1,14 @@
 import React from "react";
 import Header from "./Header";
+import Subheader from "./Subheader";
+import KombuchaList from "./KombuchaList";
 
 function App(){
   return (
     <React.Fragment>
       <Header />
-      <h2>Classic Arcade and Kombucha on Tap</h2>
+      <Subheader />
+      <KombuchaList />
     </React.Fragment>
   );
 }
