@@ -1,14 +1,14 @@
-# _Tap Room_
+# _Garrett's Double Tap Room_
 
 * _Date Created: August 21st 2021_
-* _Last Updated: August 28th 2021_
+* _Last Updated: August 29th 2021_
 
 #### By _Garrett Brown_
 
 ***
 
 ## Description
-Drinks on me!
+Drinks on me! A program that allows individuals to list the kegs of Kombucha at the tap room. A user can list a keg of kombucha, and include, Name, Brand, Price, Flavor, and Quantity. If a person wants to purchase a pint, the keg then lists how many pints are left in the keg.
 
 
 <details>
@@ -33,26 +33,18 @@ Drinks on me!
 1. An internet browser.
 2. Visual Code Studio (or another code editor).
 3. .NET
-4. MySQL
-5. MySQLWorkbench
+
 </details>
 
 <details>
-    <summary>Installation of Program</summary>
+    <summary>Installation of Program and Startup</summary>
 
 1. Open the terminal on your local machine and navigate to "Desktop."
-2. Clone Tap Room with the following git command
-3. Navigate to the top level of the repository with the command `cd `
-
-</details>
-
-<details>
-    <summary>Startup</summary>
-
-#### Scribble Board Installation
-1. Navigate to the top level of the repository with the command `cd tap-room`
-2. Navigate into "tap-room" with git command `cd tap-room`
-3. Navigate to root directory in project.
+2. Clone Tap Room with the following git command `git clone https://github.com/GBProductions/tap-room.git`
+3. Navigate to the top level of the repository with the command `cd tap-room`
+4. In the CL, type in `npm install`.
+5. In the CL, type in `npm run build`.
+6. In the CL, type in `npm start`.
 
 </details>
 
@@ -61,8 +53,6 @@ Drinks on me!
 
 _There are currently no known bugs._
 
-## Further Exploration
-_N/A_
 
 ## Support and contact details
 
@@ -70,9 +60,10 @@ _For assistance, please contact:_
 * Garrett Brown <garrettpaulbrown@gmail.com>
 
 ## Technologies Used
-
-
-
+1. VSCode, Github
+2. HTML, CSS, JS, MD, JSX
+3. React, Webpack
+4. .NET
 
 ## Licensing
 

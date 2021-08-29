@@ -6,7 +6,7 @@ function KombuchaDetail(props){
     function handleBuyingKombucha(event) {
         event.preventDefault();
         if (props.kombucha.quantity === 1 || props.kombucha.quantity === 0) {
-            return props.onClickingBuy(({name: props.kombucha.name, brand: props.kombucha.brand, price: props.kombucha.price, flavor: props.kombucha.flavor, quantity: (props.kombucha.quantity === 0), id: props.kombucha.id}));
+            return props.onClickingBuy(({name: props.kombucha.name, brand: props.kombucha.brand, price: props.kombucha.price, flavor: props.kombucha.flavor, quantity: 0, id: props.kombucha.id}));
         } else {
             return props.onClickingBuy(({name: props.kombucha.name, brand: props.kombucha.brand, price: props.kombucha.price, flavor: props.kombucha.flavor, quantity: (props.kombucha.quantity - 1), id: props.kombucha.id}));
         }
