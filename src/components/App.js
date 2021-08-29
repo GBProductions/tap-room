@@ -1,14 +1,14 @@
 import React from "react";
 import Header from "./Header";
 import Subheader from "./Subheader";
-import KombuchaList from "./KombuchaList";
+import KombuchaControl from "./KombuchaControl";
 
 function App(){
   return (
     <React.Fragment>
       <Header />
       <Subheader />
-      <KombuchaList />
+      <KombuchaControl />
     </React.Fragment>
   );
 }
