@@ -7,7 +7,8 @@ class KombuchaControl extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            formVisibleOnPage: false
+            formVisibleOnPage: false,
+            masterKombuchaList: []
         };
     }
 
@@ -17,14 +18,22 @@ class KombuchaControl extends React.Component {
         }));
     }
 
+    handleAddingNewKombuchaToList = (newKombucha) => {
+        const newMasterKombuchaList = this.state.masterKombuchaList.concat(newKombucha);
+        this.setState({
+            masterKombuchaList: newMasterKombuchaList,
+            formVisibleOnPage: false });
+    }
+
     render(){
         let currentlyVisibleState = null;
         let buttonText = null;
         if (this.state.formVisibleOnPage) {
-            currentlyVisibleState = <NewKombuchaForm />
+            currentlyVisibleState = <NewKombuchaForm onNewKombuchaCreation={this.handleAddingNewKombuchaToList} />
             buttonText = "Return to Kombucha Menu";
         } else {
-            currentlyVisibleState = <KombuchaList />
+            currentlyVisibleState = <KombuchaList kombuchaList=
+            {this.state.masterKombuchaList} />;
             buttonText = "Add Kombucha"
         }
         return (
